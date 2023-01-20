@@ -1,0 +1,6 @@
+for /L %i in (1, 1, 301) do (
+  md D%itrn_dir
+  for /L %j in (1, 1, 10) do (
+    md D%itrn_dir\split_%j
+  )
+)
